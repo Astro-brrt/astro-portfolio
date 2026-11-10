@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justine Lei | Portfolio</title>
+    <link rel="icon" type="image/png" href="Images/logo.png">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="intro-locked">
+
+    <div class="glow-orb glow-orb-1"></div>
+    <div class="glow-orb glow-orb-2"></div>
+    <div class="glow-orb glow-orb-3"></div>
+    <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+    <div class="home-lanyard" id="home-lanyard">
+        <canvas id="home-lanyard-canvas" role="img" tabindex="0"
+            aria-label="Drag the card sideways to swing it."></canvas>
+    </div>
+
+    <nav aria-label="Main navigation">
+        <div class="nav-container">
+            <a class="logo" href="#home" aria-label="Justine Lei">
+                <img src="Images/logo.png" alt="">
+                <h4>Justine Lei</h4>
+            </a>
+
+            <div class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About Me</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contacts</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+    <section class="home" id="home">
+        <div class="home-container">
+            <div class="home-text home-animate-text">
+                <p class="home-eyebrow">WELCOME TO MY PORTFOLIO</p>
+                <h1>Hello, I'm <span>Justine Lei</span></h1>
+                <h3 id="typing-text"></h3>
+                <p>
+                    I am an Information Technology student with a strong interest in web development, design, and continuous learning. I am dedicated to improving my skills and creating meaningful digital projects.
+                </p>
+
+                <div class="home-buttons">
+                    <a href="#projects" class="btn-primary">View My Projects</a>
+                    <a href="#contact" class="btn-secondary">Contact Me</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+<section class="about" id="about">
+        <div class="about-container">
+
+            <div class="about-top">
+                <div class="about-image about-animate-image">
+                    <img src="Images/aboutpicture.png" alt="Justine Lei">
+                </div>
+
+                <div class="about-text about-animate-text">
+                    <h1>Introduction</h1>
+                    <p>
+                        My name is Justine Lei A. De Castro, and I am a college student currently taking up Bachelor of Science in Information Technology. As an IT student, I am passionate about learning more about technology, especially in web development, design, and problem-solving. I enjoy exploring new ideas and improving my skills through continuous practice and experience. My goal is to become a skilled and successful IT professional in the future, capable of creating useful and meaningful digital solutions.
+                    </p>
+                </div>
+            </div>
+
+            <div class="education-section">
+                <h4 class="education-title">My Education</h4>
+                <p class="education-text">
+                    I am currently a student who is continuously learning and improving my knowledge in web development, design, and other IT-related skills.
+                </p>
+
+                <div class="education-box">
+                    <h5>College</h5>
+                    <p>BSIT - Bachelor of Science in Information Technology</p>
+                    <p>Pamantasan ng Lungsod ng Valenzuela</p>
+                    <p>2024 - Present</p>
+                </div>
+
+                <div class="education-box">
+                    <h5>Senior High School</h5>
+                    <p>ICT</p>
+                    <p>Meycauayan National High School</p>
+                    <p>2020 - 2022</p>
+                </div>
+
+                <div class="education-box">
+                    <h5>High School</h5>
+                    <p>Meycauayan National High School</p>
+                    <p>2016 - 2019</p>
+                </div>
+            </div>
+
+            <div class="skills-section">
+                <div class="skills-heading">
+                    <div class="skills-heading-copy">
+                        <span class="skills-kicker">WHAT I'M LEARNING</span>
+                        <h4 class="skills-title">Skills &amp; Tools</h4>
+                        <p class="skills-subtitle">A growing toolkit across web development, programming, networking, and creative work.</p>
+                    </div>
+                    <span class="skills-count">07 SKILLS</span>
+                </div>
+
+                <div class="skills-grid">
+                    <article class="skill-card">
+                        <div class="skill-card-top">
+                            <div class="skill-icon-group"><img src="Images/ciscologo.png" alt="Cisco"></div>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-card-copy">
+                            <span class="skill-category">NETWORKING</span>
+                            <h5 class="skill-title">Networking</h5>
+                        </div>
+                        <div class="skill-meter" role="progressbar" aria-label="Networking skill level" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90">
+                            <div class="skill-fill" data-width="90%"></div>
+                        </div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-card-top">
+                            <div class="skill-icon-group"><img src="Images/htmllogo.png" alt="HTML"></div>
+                            <span class="skill-percent">60%</span>
+                        </div>
+                        <div class="skill-card-copy">
+                            <span class="skill-category">WEB DEVELOPMENT</span>
+                            <h5 class="skill-title">HTML</h5>
+                        </div>
+                        <div class="skill-meter" role="progressbar" aria-label="HTML skill level" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60">
+                            <div class="skill-fill" data-width="60%"></div>
+                        </div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-card-top">
+                            <div class="skill-icon-group">
+                                <img src="Images/canvalogo.png" alt="Canva">
+                                <img src="Images/pslogo.png" alt="Photoshop">
+                            </div>
+                            <span class="skill-percent">50%</span>
+                        </div>
+                        <div class="skill-card-copy">
+                            <span class="skill-category">CREATIVE TOOLS</span>
+                            <h5 class="skill-title">Video &amp; Picture Editing</h5>
+                        </div>
+                        <div class="skill-meter" role="progressbar" aria-label="Video and picture editing skill level" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+                            <div class="skill-fill" data-width="50%"></div>
+                        </div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-card-top">
+                            <div class="skill-icon-group"><img src="Images/javalogo.png" alt="Java"></div>
+                            <span class="skill-percent">45%</span>
+                        </div>
+                        <div class="skill-card-copy">
+                            <span class="skill-category">PROGRAMMING</span>
+                            <h5 class="skill-title">Java</h5>
+                        </div>
+                        <div class="skill-meter" role="progressbar" aria-label="Java skill level" aria-valuemin="0" aria-valuemax="100" aria-valuenow="45">
+                            <div class="skill-fill" data-width="45%"></div>
+                        </div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-card-top">
+                            <div class="skill-icon-group"><img src="Images/csslogo.png" alt="CSS"></div>
+                            <span class="skill-percent">40%</span>
+                        </div>
+                        <div class="skill-card-copy">
+                            <span class="skill-category">WEB DESIGN</span>
+                            <h5 class="skill-title">CSS</h5>
+                        </div>
+                        <div class="skill-meter" role="progressbar" aria-label="CSS skill level" aria-valuemin="0" aria-valuemax="100" aria-valuenow="40">
+                            <div class="skill-fill" data-width="40%"></div>
+                        </div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-card-top">
+                            <div class="skill-icon-group"><img src="Images/sqllogo.png" alt="SQL"></div>
+                            <span class="skill-percent">40%</span>
+                        </div>
+                        <div class="skill-card-copy">
+                            <span class="skill-category">DATABASE</span>
+                            <h5 class="skill-title">SQL</h5>
+                        </div>
+                        <div class="skill-meter" role="progressbar" aria-label="SQL skill level" aria-valuemin="0" aria-valuemax="100" aria-valuenow="40">
+                            <div class="skill-fill" data-width="40%"></div>
+                        </div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-card-top">
+                            <div class="skill-icon-group"><img src="Images/jslogo.png" alt="JavaScript"></div>
+                            <span class="skill-percent">20%</span>
+                        </div>
+                        <div class="skill-card-copy">
+                            <span class="skill-category">WEB DEVELOPMENT</span>
+                            <h5 class="skill-title">JavaScript</h5>
+                        </div>
+                        <div class="skill-meter" role="progressbar" aria-label="JavaScript skill level" aria-valuemin="0" aria-valuemax="100" aria-valuenow="20">
+                            <div class="skill-fill" data-width="20%"></div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="certificates-section">
+                <h4 class="certificates-title">My Certificates</h4>
+                <p class="certificates-text">
+                    Here are some of the certificates I have earned.
+                </p>
+
+                <div class="certificates-flexbox">
+                    <div class="certificate-card">
+                        <img src="Images/certificate.png" alt="Certificate 1">
+                        <h5>Journey into SQL with Taylor Swift</h5>
+                        <p>This certificate shows that I learned the basic concepts of SQL and how to use simple queries in a database.</p>
+                    </div>
+
+                    <div class="certificate-card">
+                        <img src="Images/certificate2.png" alt="Certificate 2">
+                        <h5>Introduction To Packet Tracer Exam</h5>
+                        <p>This certificate shows that I learned how to use Cisco Packet Tracer and understand basic networking activities.</p>
+                    </div>
+
+                    <div class="certificate-card">
+                        <img src="Images/certificate3.png" alt="Certificate 3">
+                        <h5>Exploring Internet of Things with Cisco Packet Tracer</h5>
+                        <p>This certificate shows that I learned about Internet of Things and how smart devices can be connected using Cisco Packet Tracer.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="demo-reel-section">
+                <h4 class="demo-reel-title">My Demo Reel</h4>
+                <p class="demo-reel-text">
+                    Here is a short demo reel showcasing some of my work and projects.
+                </p>
+
+                <div class="demo-reel-video">
+					<video controls>
+						<source src="Images/Video/demo-reel.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+				</div>
+            </div>
+
+        </div>
+    </section>
+<section class="projects" id="projects">
+        <div class="projects-container">
+
+            <div class="section-title">
+                <h1>My <span>Projects</span></h1>
+                <p>Here are some of the things I have built.</p>
+            </div>
+
+            <div class="projects-flexbox">
+
+                <div class="project-card">
+                    <img src="Images/GameUI.png" alt="Game UI" class="project-image">
+                    <h3>Game UI</h3>
+                        <p>
+                            A game user interface concept created in Figma, focused on layout, visual hierarchy, and an engaging player experience.
+                        </p>
+                    <div class="project-tags">
+                        <span class="tag">Multimedia</span>
+                        <span class="tag">Figma</span>
+                        <span class="tag">UI Design</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://www.figma.com/proto/9JAt0LMfc8KQDqubcNpcRp/UTS-FINAL-PROJECT-GROUP?node-id=23-5&t=cfmJarnUqSTfqd4f-1&starting-point-node-id=23%3A5" class="btn-small btn-outline" target="_blank">View Work</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <a href="Images/Social Media Advertisement.png" target="_blank" class="project-image-link">
+                        <img src="Images/Social Media Advertisement.png" alt="Poster Design" class="project-image">
+                    </a>
+                    <h3>Poster Design</h3>
+                    <p>
+                        A poster design created to showcase visual composition, color harmony, and promotional layout skills.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Multimedia</span>
+                        <span class="tag">Poster</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="Images/Social Media Advertisement.png" class="btn-small btn-outline" target="_blank">View Work</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <a href="Images/Social.png" target="_blank" class="project-image-link">
+                        <img src="Images/Social.png" alt="Pubmat Design" class="project-image">
+                    </a>
+                    <h3>Pubmat Design</h3>
+                    <p>
+                        A publication material designed for digital promotion, combining strong visuals, branding, and clear presentation.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Multimedia</span>
+                        <span class="tag">Pubmat</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="Images/Social.png" class="btn-small btn-outline" target="_blank">View Work</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <a href="Images/Canva.png" target="_blank" class="project-image-link">
+                        <img src="Images/Canva.png" alt="Photo Editing" class="project-image">
+                    </a>
+                    <h3>Photo Editing</h3>
+                    <p>
+                        A creative photo editing project that highlights composition, enhancement, and attention to visual detail.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Multimedia</span>
+                        <span class="tag">Editing</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="Images/Canva.png" class="btn-small btn-outline" target="_blank">View Work</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="Images/RobloxGame.png" alt="Roblox Game" class="project-image">
+                    <h3>Roblox Game</h3>
+                        <p>
+                            A Roblox game project that explores interactive gameplay, environment design, and creative game development concepts.
+                        </p>
+                    <div class="project-tags">
+                        <span class="tag">Roblox Game</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://www.roblox.com/games/92355799769122/1K-GoodLuck" class="btn-small btn-outline" target="_blank">View Work</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="Images/Origami.png" alt="Origami Website" class="project-image">
+                    <h3>Origami Website</h3>
+                    <p>
+                        A multi-page website project developed using HTML and CSS, featuring structured navigation, responsive layout, and clean visual design.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Astro-brrt/Origami-Website" class="btn-small btn-outline" target="_blank">Source Code</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Drugstore Queue</h3>
+                    <p>
+                        A Java-based queue system project designed to simulate customer flow and basic transaction handling in a drugstore setup.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">JAVA</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Astro-brrt/DrugstoreQUEUE" class="btn-small btn-outline" target="_blank">Source Code</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Drugstore Linked List</h3>
+                    <p>
+                        A Java project that applies linked list data structures to manage and organize drugstore records efficiently.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">JAVA</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Astro-brrt/DrugstoreLinkedList" class="btn-small btn-outline" target="_blank">Source Code</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Drugstore Array</h3>
+                    <p>
+                        A Java project that uses arrays to store, access, and manage drugstore-related data in a simple structured system.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">JAVA</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Astro-brrt/DrugstoreArray" class="btn-small btn-outline" target="_blank">Source Code</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Drugstore Graph</h3>
+                    <p>
+                        A Java project that demonstrates the use of graph structures for representing connections and relationships within a drugstore system.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">JAVA</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Astro-brrt/DrugstoreGraph" class="btn-small btn-outline" target="_blank">Source Code</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Drugstore Stack</h3>
+                    <p>
+                        A Java project that applies stack data structures to manage sequential processes and data handling in a drugstore scenario.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">JAVA</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Astro-brrt/DrugstoreStack" class="btn-small btn-outline" target="_blank">Source Code</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>UI Proposals</h3>
+                    <p>
+                        A collection of interface proposals created in Figma, presenting design ideas focused on usability, structure, and modern visual style.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Figma</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://www.figma.com/design/xCpf89TQw1P94g9E8YORvs/DSA-PROPOSALS?node-id=33-658&t=1TK80yC3O53JHkkH-0" class="btn-small btn-outline" target="_blank">View Work</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+<section class="contact" id="contact">
+        <div class="contact-container">
+
+            <div class="section-title">
+                <h1>Contact <span>Me</span></h1>
+                <p>Have something to say? Feel free to send me a message!</p>
+            </div>
+
+            <div class="contact-layout contact-layout-single">
+
+                <div class="contact-info">
+                    <h3>Get In Touch With Me!</h3>
+                    <p>
+                        I am open to project collaborations, questions, or just a friendly hello.
+                        You can reach me directly through any of the links below.
+                    </p>
+
+                    <div class="social-links">
+                        <a href="mailto:justineleidecastro9@gmail.com?subject=Portfolio%20Inquiry" target="_blank">
+                            <img src="Images/gmaillogo.png" alt="Gmail">
+                            <span>Gmail</span>
+                        </a>
+
+                        <a href="https://www.facebook.com/share/1E9XJQR1uw/" target="_blank">
+                            <img src="Images/fblogo.png" alt="Facebook">
+                            <span>Facebook</span>
+                        </a>
+
+                        <a href="https://www.instagram.com/dmn_astro?igsh=YXkxam5xZDJicTd3" target="_blank">
+                            <img src="Images/iglogo.png" alt="Instagram">
+                            <span>Instagram</span>
+                        </a>
+
+                        <a href="https://github.com/Astro-brrt" target="_blank">
+                            <img src="Images/githublogo.png" alt="GitHub">
+                            <span>GitHub</span>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/justine-lei-de-castro-79a460404/" target="_blank">
+                            <img src="Images/linkedinlogo.png" alt="LinkedIn">
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+
+                    <div class="contact-meta">
+                        <div class="meta-box">
+                            <strong>Location📍</strong>
+                            <p>Philippines</p>
+                        </div>
+
+                        <div class="meta-box">
+                            <strong>Status💼</strong>
+                            <p>Open for opportunities</p>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <footer class="portfolio-footer">
+        <p>© 2026 Justine Lei De Castro. All rights reserved.</p>
+        <a href="#home">Back to top ↑</a>
+    </footer>
+
+    <!-- white background and my id -->
+    <div class="intro-curtain" id="introCurtain" aria-label="Portfolio introduction">
+        <div class="portfolio-stack" id="portfolioStack" aria-hidden="true">
+            <div class="stack-sheet"></div>
+            <div class="stack-sheet"></div>
+            <div class="stack-sheet"></div>
+        </div>
+        <div class="lanyard-wrap" id="lanyard">
+            <canvas id="lanyard-canvas" aria-label="Drag it down once to reveal the portfolio."></canvas>
+            <span class="lanyard-hint">DRAG THE ID DOWN TO REVEAL</span>
+        </div>
+    </div>
+
+    <script src="JAVASCRIPT/background.js"></script>
+    <script src="JAVASCRIPT/script.js"></script>
+    <script src="JAVASCRIPT/certificate-carousel.js"></script>
+    <script src="JAVASCRIPT/projects-carousel.js"></script>
+    <script src="JAVASCRIPT/lanyard.js"></script>
+    <script src="JAVASCRIPT/home-lanyard.js"></script>
+    <script src="JAVASCRIPT/reveal.js"></script>
+</body>
+</html>
